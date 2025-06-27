@@ -10,6 +10,50 @@ async function fetchBooks() {
   displayBooks(books);
 }
 
+
+// LOGIN
+function login() {
+  const email = document.getElementById("email").value;
+  const password = document.getElementById("password").value;
+
+  firebase.auth().signInWithEmailAndPassword(email, password)
+    .then(userCredential => {
+      document.getElementById("authMessage").innerText = "Logged in successfully!";
+    })
+    .catch(error => {
+      document.getElementById("authMessage").innerText = error.message;
+    });
+}
+
+// SIGN UP
+function signup() {
+  const email = document.getElementById("email").value;
+  const password = document.getElementById("password").value;
+
+  firebase.auth().createUserWithEmailAndPassword(email, password)
+    .then(userCredential => {
+      document.getElementById("authMessage").innerText = "Account created successfully!";
+    })
+    .catch(error => {
+      document.getElementById("authMessage").innerText = error.message;
+    });
+}
+
+// LOGOUT
+function logout() {
+  firebase.auth().signOut().then(() => {
+    document.getElementById("authMessage").innerText = "Logged out.";
+  });
+}
+
+// Listen to auth state changes
+firebase.auth().onAuthStateChanged(user => {
+  if (user) {
+    document.getElementById("authMessage").innerText = `Welcome, ${user.email}`;
+  } else {
+    console.log("No user signed in.");
+  }
+});
 // Render books
 function displayBooks(books) {
   container.innerHTML = '';
