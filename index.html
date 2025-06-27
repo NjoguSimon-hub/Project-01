@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Book Explorer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <h1>📚 Book Explorer</h1>
+    <input type="text" id="searchBar" placeholder="Search by title..." />
+    <select id="genreFilter">
+      <option value="all">All Genres</option>
+      <option value="Fantasy">Fantasy</option>
+      <option value="Classic">Classic</option>
+      <option value="Romance">Romance</option>
+      <option value="Dystopian">Dystopian</option>
+    </select>
+    <button id="themeToggle">Toggle Light/Dark</button>
+  </nav>
+ <div class="card-img-container">
+  <img src="https://www.wallpapergap.com/cdn/24/179/fantasy-pictures-of-books-wallpapers-1680x1050.jpg" class="card-img" alt="Books" />
+  <div class="card-text-overlay">
+    <h2>Welcome to Book Explorer</h2>
+    <p>Find your next adventure in a book!</p>
+  </div>
+</div>
+
+  <!-- Main Content -->
+  <main id="bookContainer"></main>
+  
+
+  <!-- Footer -->
+ <footer class="footer"> 
+   
+   <section id="about">
+  <h2>About Us</h2>
+  <p>We are a leading online platform for book lovers, offering a vast collection of books across various genres.</p>
+   <p>Our mission is to connect readers with the books they love and to foster a community of book enthusiasts.</p>
+   <section id="downloads">
+   <h2>Downloads</h2>
+   <p>Check out our latest eBooks and audiobooks available for download.</p>
+   <ul>
+     <li><a href="#ebook1">eBook 1</a></li>
+     <li><a href="#ebook2">eBook 2</a></li>
+     <li><a href="#audiobook1">Audiobook 1</a></li>
+   </ul>
+</section>
+   </section>
+   <section id="foundation">
+      <h2>Foundation</h2>
+      <p>Our foundation is dedicated to promoting literacy and education through various initiatives and partnerships.</p>
+      <p>We believe in the power of books to change lives and communities.</p>
+   </section>
+   <section id="loyalty">
+      <h2>Loyalty Program</h2>
+      <p>Join our loyalty program to earn points with every purchase, which can be redeemed for discounts and exclusive offers.</p>
+   </section>
+   <section id="return">
+      <h2>Return Policy</h2>
+      <p>If you are not satisfied with your purchase, you can return it within 30 days for a full refund or exchange.</p>
+   </section>
+   <section id="privacy">
+      <h2>Privacy Notice</h2>
+      <p>Your privacy is important to us. We are committed to protecting your personal information and ensuring its security.</p>
+      <p>Please read our full privacy policy for more details on how we collect, use, and protect your data.</p>
+</section>
+  <section id="terms">
+  <h2>Terms and Conditions</h2>
+  <p>Welcome to our website. By continuing to browse and use this website, you are agreeing to comply with and be bound by the following terms and conditions...</p>
+  </section>
+  <div class="footer-section">
+    <p>&copy; 2025 Lintons Place Ltd<br>
+    2nd Floor, Northern Wing, Kenrail Towers,<br>
+    Westlands.<br>
+    Nairobi, Kenya.<br>
+    Tel: +254769563736 / +254757583298<br>
+     <div class="social-icons">
+    <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+    <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+  </div>
+    </p>
+  </div></footer>
+  
+   <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
