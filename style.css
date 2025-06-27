@@ -80,7 +80,7 @@ footer {
 
 .card-text-overlay {
   position: absolute;
-  top: 34%;
+  top: 42%;
   left: 34%;
   transform: translate(-50%, -50%);
   color: white;
@@ -88,7 +88,7 @@ footer {
   padding: 1rem 2rem;
   border-radius: 8px;
   text-align: center;
-  font-size: 5rem;
+  font-size: 4rem;
 }
 .footer {
   display: flex;
