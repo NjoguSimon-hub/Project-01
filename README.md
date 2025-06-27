@@ -26,3 +26,15 @@ A simple online book store web app that allows users to browse books by genre, v
 
 ---
 
+Contact 
+
+If you have any questions or suggestions, feel free to contact:
+Simon Njogu 
+njogusimong@gmail.com
+
+License
+This project is open source and available under the MIT
+License
+
+
+
